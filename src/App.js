@@ -23,10 +23,10 @@ class App extends Component {
     if (this.state.clickedCards.includes(id)) {
       this.setState({ score: 0, clickedCards: [] })
 
-      pageBody.classList.add('shakeWrapper')
+      pageBody.classList.add()
       this.setState({ footerText: 'Get me another beer Lois! Start Over.' })
       setTimeout(() => {
-        pageBody.classList.remove('shakeWrapper');
+        pageBody.classList.remove();
       }, 500);
       setTimeout(() => {
         this.setState({ footerText: "" })
